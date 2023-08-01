@@ -1,0 +1,30 @@
+GET http://localhost:5000/api/v1/userádf
+###
+POST http://localhost:5000/api/v1/auth/register
+Content-Type: application/json
+
+{
+    "email":"admin@gmail.com",
+    "password":"123456"
+}
+
+###
+POST http://localhost:5000/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email":"admin1@gmail.com",
+    "password":"123456"
+}
+
+
+###
+
+GET http://localhost:5000/api/v1/user/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbjFAZ21haWwuY29tIiwicm9sZV9jb2RlIjoiUjMiLCJpYXQiOjE2OTA4MTcxMTgsImV4cCI6MTY5MDgxNzEyM30.zNCXkbJrbC9j-DukhEWG_YxoaGfmdLIlV2LeogIQVEw
+
+###
+GET http://localhost:5000/api/v1/insert
+
+###
+GET http://localhost:5000/api/v1/book/?name=Long-Term
